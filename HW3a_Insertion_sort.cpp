@@ -39,6 +39,7 @@ void readFile(string fileName, vector<int> &x, int &n)
 
 void insertionSort(vector<int> &x, int n)
 {
+    cout <<"test test"<< x.length;
     int L = 0, R = n - 1;
     int temp;
     for (int target = L + 1; target <= R; target++)

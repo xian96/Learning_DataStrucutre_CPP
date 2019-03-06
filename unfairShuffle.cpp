@@ -45,9 +45,9 @@ void print(double *a, int n, int k)
 {
     for (int j = 0; j < n; j++) //
     {
-        
-        double i =a[j]/(double)k;
-        cout <<setprecision(2)<< i << "\t";
+
+        double i = a[j] / (double)k;
+        cout << setprecision(2) << i << "\t";
     }
     cout << "\n";
 }
