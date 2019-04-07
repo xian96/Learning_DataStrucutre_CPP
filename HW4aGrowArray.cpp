@@ -175,7 +175,7 @@ class box//use this class type to store all the growarray
     {
         data = new GrowArray[len];
     }
-    void addEnd(GrowArray &g)
+    void addEnd(const GrowArray &g)
     {
         data[pos++] = g;
     }
@@ -201,6 +201,7 @@ int main()
         {
             double i = gridx * XperBox;
             double j = gridy * YperBox;
+            // GrowArray * g = new GrowArray();
             GrowArray g = GrowArray();
             b.addEnd(g);
             // cout << gridx * 16 + gridy <<" create growarray (i,j)" <<  " " << i << " " << j << "\n";

@@ -66,6 +66,13 @@ void insertionSort(vector<int> &x, int L, int R)
     }
 }
 
+void krnuthQuickSort(vector<int> &x, int n, int k)
+{
+    if (n <= k) //means insertion
+        insertionSort(x, 0, n - 1);
+    else if (n > k)
+        partialQuickSort(x, 0, n - 1, k);
+}
 void partialQuickSort(vector<int> &x, int L, int R, int k)
 {
     //    cout << "test pivot:"<< pivot<<" ";
@@ -103,13 +110,6 @@ void partialQuickSort(vector<int> &x, int L, int R, int k)
         insertionSort(x, pivot + 1, R);
 }
 
-void krnuthQuickSort(vector<int> &x, int n, int k)
-{
-    if (n <= k) //means insertion
-        insertionSort(x, 0, n - 1);
-    else if (n > k)
-        partialQuickSort(x, 0, n - 1, k);
-}
 
 void goldMeanSearch(double *data, int n)
 {

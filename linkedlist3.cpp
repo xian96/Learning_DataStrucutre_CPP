@@ -43,7 +43,8 @@ class linkedlist3
             head = tail = new node(val, nullptr, nullptr);
             return;
         }
-        tail = tail->next = new node(val, nullptr, tail);
+        tail = new node(val, nullptr, tail);
+        tail->prev->next = tail;
     }
 
     void removeStart()

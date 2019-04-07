@@ -10,7 +10,7 @@ int goldenMeanSearch(int data[], int n)
     int L = 0, R = n - 1;
     int s = (R - L) / phi;
     int x = R - s, y = L + s;
-    while (R - L > 1) //change the R>L to R - L > 1;
+    while (R - L > 1) //change the R>L to R - L > 1;//guse this is the bug.
     {
         if (data[x] > data[y])
         {

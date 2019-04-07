@@ -69,6 +69,6 @@ int main()
     a.addEnd(5);
     a.addEnd(5);
     GrowArray<int> b = a;
-    for (GrowArray<int>::iterator i = a; !il i++)
+    for (GrowArray<int>::iterator i = a; !i; i++)
         cout << *i;
 }
